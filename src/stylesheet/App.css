@@ -1,0 +1,19 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  width: 100vw; /* ヘッダーを画面幅いっぱいに広げる */
+  box-sizing: border-box; /* パディングを含めて幅を計算 */
+}

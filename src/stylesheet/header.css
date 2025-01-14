@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #34495e;
+  color: white;
+  padding: 10px 20px;
+  width: 100%; /* ヘッダーを画面幅いっぱいに広げる */
+  box-sizing: border-box; /* パディングを含めて幅を計算 */
+}
+
+.logo {
+  height: 40px;
+  margin-right: 15px;
+}
