@@ -1,4 +1,4 @@
-import logo from "/assets/poteto.svg";
+import logo from "../assets/poteto.svg";
 import "../stylesheet/header.css";
 
 const Sidebar = () => {
