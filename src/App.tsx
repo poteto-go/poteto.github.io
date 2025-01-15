@@ -12,7 +12,7 @@ const App = () => {
       <Header />
       <div className="main-container">
         <Sidebar />
-        <BrowserRouter basename="/poteto.github.io">
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/router" element={<AboutRouter />} />
