@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutRouter from "./pages/about_router";
 
 const App = () => {
+  console.log(process.env.PUBLIC_URL);
   return (
     <div className="app-container">
       <Header />
