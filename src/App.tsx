@@ -6,13 +6,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutRouter from "./pages/about_router";
 
 const App = () => {
-  console.log(process.env.PUBLIC_URL);
   return (
     <div className="app-container">
       <Header />
       <div className="main-container">
         <Sidebar />
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter basename="https://poteto-go.github.io/poteto.github.io">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/router" element={<AboutRouter />} />
