@@ -1,6 +1,9 @@
 import "./stylesheet/App.css";
 import Sidebar from "./components/sidebar";
 import Header from "./components/header";
+import Home from "./pages/home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AboutRouter from "./pages/about_router";
 
 const App = () => {
   return (
@@ -8,10 +11,12 @@ const App = () => {
       <Header />
       <div className="main-container">
         <Sidebar />
-        <main className="content">
-          <h1>Welcome to the Sidebar Page</h1>
-          <p>This is a simple example of a page with a collapsible sidebar.</p>
-        </main>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/router" element={<AboutRouter />} />
+          </Routes>
+        </BrowserRouter>
       </div>
     </div>
   );
