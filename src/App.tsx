@@ -14,7 +14,7 @@ const App = () => {
         <Sidebar />
         <BrowserRouter basename={"/poteto.github.io"}>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/poteto.github.io" element={<Home />} />
             <Route path="/router" element={<AboutRouter />} />
           </Routes>
         </BrowserRouter>
