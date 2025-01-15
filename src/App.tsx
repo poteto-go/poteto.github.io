@@ -2,7 +2,7 @@ import "./stylesheet/App.css";
 import Sidebar from "./components/sidebar";
 import Header from "./components/header";
 import Home from "./pages/home";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutRouter from "./pages/about_router";
 
 const App = () => {
@@ -11,12 +11,12 @@ const App = () => {
       <Header />
       <div className="main-container">
         <Sidebar />
-        <HashRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/router" element={<AboutRouter />} />
           </Routes>
-        </HashRouter>
+        </BrowserRouter>
       </div>
     </div>
   );
