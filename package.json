@@ -1,8 +1,7 @@
 {
   "name": "poteto-wiki",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
-  "homepage": "https://poteto-go.github.io/poteto.github.io",
   "type": "module",
   "scripts": {
     "dev": "bunx --bun vite",
