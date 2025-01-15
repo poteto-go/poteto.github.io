@@ -5,7 +5,7 @@ type Heading = {
   text: string;
 };
 
-const TableOfContents: React.FC = () => {
+const TableOfContents = () => {
   const [headings, setHeadings] = useState<Heading[]>([]);
 
   useEffect(() => {
