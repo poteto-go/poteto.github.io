@@ -11,7 +11,7 @@ const App = () => {
       <Header />
       <div className="main-container">
         <Sidebar />
-        <BrowserRouter basename="https://poteto-go.github.io/poteto.github.io">
+        <BrowserRouter basename="/poteto.github.io">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/router" element={<AboutRouter />} />
