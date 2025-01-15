@@ -1,7 +1,6 @@
 "use client";
 import { CodeBlock } from "react-code-block";
 import { LEAF_CODE_EXAMPLE, NOT_LEAF_CODE_EXAMPLE } from "../code/router/leaf";
-import TableOfContents from "../components/table_of_contents";
 import {
   JUST_ROUTER_CODE_EXAMPLE,
   ROUTER_CODE_EXAMPLE,
@@ -13,8 +12,6 @@ const AboutRouter = () => {
     <>
       <main className="content">
         <h1>Poteto Router</h1>
-
-        <TableOfContents />
 
         <h2> Router: simple router </h2>
         <p>
