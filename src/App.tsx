@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Home from "./pages/home";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import AboutRouter from "./pages/about_router";
+import GettingStartWithNew from "./pages/getting_start_with_new";
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
         <HashRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="router" element={<AboutRouter />} />
+            <Route path="/router" element={<AboutRouter />} />
+            <Route path="/getting_start" element={<GettingStartWithNew />} />
           </Routes>
         </HashRouter>
       </div>

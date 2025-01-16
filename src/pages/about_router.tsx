@@ -1,5 +1,5 @@
 "use client";
-import { CodeBlock } from "react-code-block";
+import MyCodeBlock from "../components/code_block";
 import { LEAF_CODE_EXAMPLE, NOT_LEAF_CODE_EXAMPLE } from "../code/router/leaf";
 import {
   JUST_ROUTER_CODE_EXAMPLE,
@@ -18,22 +18,10 @@ const AboutRouter = () => {
           Poteto provides a simple API. You can use "GET", "POST", "PUT",
           "DELETE", "PATCH", "OPTIONS", "HEAD", "CONNECT", "TRACE" methods.
         </p>
-        <CodeBlock code={ROUTER_CODE_EXAMPLE} language="go">
-          <CodeBlock.Code className="code-block">
-            <CodeBlock.LineContent>
-              <CodeBlock.Token />
-            </CodeBlock.LineContent>
-          </CodeBlock.Code>
-        </CodeBlock>
+        <MyCodeBlock code={ROUTER_CODE_EXAMPLE} language="go" />
 
         <p>You can use just Router with the same interface.</p>
-        <CodeBlock code={JUST_ROUTER_CODE_EXAMPLE} language="go">
-          <CodeBlock.Code className="code-block">
-            <CodeBlock.LineContent>
-              <CodeBlock.Token />
-            </CodeBlock.LineContent>
-          </CodeBlock.Code>
-        </CodeBlock>
+        <MyCodeBlock code={JUST_ROUTER_CODE_EXAMPLE} language="go" />
 
         <h2> Leaf: highly readable router </h2>
         <p>
@@ -46,22 +34,10 @@ const AboutRouter = () => {
         </a>
         <h3>How to use</h3>
         <p>You can leaf with middleware you like.</p>
-        <CodeBlock code={LEAF_CODE_EXAMPLE} language="go">
-          <CodeBlock.Code className="code-block">
-            <CodeBlock.LineContent>
-              <CodeBlock.Token />
-            </CodeBlock.LineContent>
-          </CodeBlock.Code>
-        </CodeBlock>
+        <MyCodeBlock code={LEAF_CODE_EXAMPLE} language="go" />
 
         <p>The above code would be the same as the following code.</p>
-        <CodeBlock code={NOT_LEAF_CODE_EXAMPLE} language="go">
-          <CodeBlock.Code className="code-block">
-            <CodeBlock.LineContent>
-              <CodeBlock.Token />
-            </CodeBlock.LineContent>
-          </CodeBlock.Code>
-        </CodeBlock>
+        <MyCodeBlock code={NOT_LEAF_CODE_EXAMPLE} language="go" />
 
         <h2> Algorithm: Radix-Tree </h2>
         <p>
@@ -81,13 +57,7 @@ const AboutRouter = () => {
           Golang's Strings.Split, a loop process runs internally, and by
           omitting it, the routing is twice as fast.
         </p>
-        <CodeBlock code={FAST_ROUTING_CODE} language="go">
-          <CodeBlock.Code className="code-block">
-            <CodeBlock.LineContent>
-              <CodeBlock.Token />
-            </CodeBlock.LineContent>
-          </CodeBlock.Code>
-        </CodeBlock>
+        <MyCodeBlock code={FAST_ROUTING_CODE} language="go" />
       </main>
     </>
   );
