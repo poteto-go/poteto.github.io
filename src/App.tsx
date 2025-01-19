@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import AboutRouter from "./pages/about_router";
 import GettingStartWithNew from "./pages/getting_start_with_new";
+import BestPractice from "./pages/best_practice";
 
 const App = () => {
   return (
@@ -16,8 +17,9 @@ const App = () => {
         <HashRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/router" element={<AboutRouter />} />
             <Route path="/getting_start" element={<GettingStartWithNew />} />
+            <Route path="/best_practice" element={<BestPractice />} />
+            <Route path="/router" element={<AboutRouter />} />
           </Routes>
         </HashRouter>
       </div>
